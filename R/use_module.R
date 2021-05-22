@@ -11,9 +11,22 @@
 #'
 #' @export
 use_module <- function(module, destdir = NULL) {
-  module <- paste0("emptyfield-ds/", module)
+  check_pak()
+  check_deps(module)
+
   usethis::use_course(
-    module,
+    as_repo(module),
     destdir = destdir
   )
+}
+
+
+as_repo <- function(module) paste0("emptyfield-ds/", module)
+
+check_pak <- function() {
+
+}
+
+check_deps <- function(module) {
+
 }
