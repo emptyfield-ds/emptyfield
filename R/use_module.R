@@ -9,7 +9,6 @@
 #'   materials installed. If `NULL`, defaults to your Desktop or some other
 #'   conspicuous place.
 #'
-#'
 #' @export
 use_module <- function(module, destdir = NULL) {
   module <- paste0("emptyfield-ds/", module)
