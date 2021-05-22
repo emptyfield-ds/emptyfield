@@ -11,6 +11,7 @@ Description: Install learning materials from Empty Field Data Science
 License: MIT + file LICENSE
 Imports: 
     gh,
+    glue,
     pak (>= 0.1.2.9001),
     usethis
 Encoding: UTF-8

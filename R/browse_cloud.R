@@ -11,7 +11,7 @@
 #' @export
 #' @importFrom utils browseURL
 browse_cloud <- function(module, open = interactive()) {
-  query <- paste0("/repos/emptyfield-ds/", module)
+  query <- glue::glue("/repos/emptyfield-ds/{module}")
   rstudio_cloud_url <- gh::gh(query)$homepage
   if (is.null(rstudio_cloud_url)) {
     usethis::ui_stop("No RStudio Cloud URL found for {usethis::ui_value(module)}")
