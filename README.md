@@ -4,6 +4,8 @@
 # emptyfield
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/emptyfield-ds/emptyfield/workflows/R-CMD-check/badge.svg)](https://github.com/emptyfield-ds/emptyfield/actions)
 <!-- badges: end -->
 
 The goal of emptyfield is to download learning materials for Empty Field
