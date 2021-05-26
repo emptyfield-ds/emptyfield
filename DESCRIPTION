@@ -7,12 +7,13 @@ Authors@R:
            role = c("aut", "cre"),
            email = "malcolmbarrett@gmail.com",
            comment = c(ORCID = "0000-0003-0299-5825"))
-Description: Install learning materials from Empty Field Data Science
-License: MIT + file LICENSE
+Description: Install learning materials from Empty Field Data Science.
+License: CC BY 4.0
 Imports: 
     gh,
     glue,
     pak (>= 0.1.2.9001),
+    rlang,
     usethis
 Encoding: UTF-8
 LazyData: true

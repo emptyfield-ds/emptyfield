@@ -3,3 +3,5 @@
 export(browse_cloud)
 export(use_module)
 importFrom(utils,browseURL)
+importFrom(utils,install.packages)
+importFrom(utils,packageVersion)

@@ -10,6 +10,7 @@
 #'   conspicuous place.
 #'
 #' @export
+#' @importFrom utils install.packages packageVersion
 use_module <- function(module, destdir = NULL) {
   check_pak()
   check_deps(module)
@@ -41,3 +42,4 @@ check_deps <- function(module) {
   pkgs <- readLines(url, encoding = "UTF-8", warn = FALSE)
   rlang::check_installed(pkgs, "for this module.")
 }
+
