@@ -38,7 +38,7 @@ check_pak <- function() {
 }
 
 check_deps <- function(module) {
-  url <- glue::glue("https://raw.githubusercontent.com/emptyfield-ds/{module}/main/.deps")
+  url <- glue::glue("https://raw.githubusercontent.com/emptyfield-ds/{module}/HEAD/.deps")
   pkgs <- readLines(url, encoding = "UTF-8", warn = FALSE)
   rlang::check_installed(pkgs, "for this module.")
 }
