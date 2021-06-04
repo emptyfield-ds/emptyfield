@@ -18,7 +18,7 @@ browse_cloud <- function(module, open = interactive()) {
   }
 
   if (isTRUE(getOption("knitr.in.progress"))) {
-    html <- glue::glue('<i class="fas fa-cloud"></i> [Open in RStudio Cloud]({rstudio_cloud_url})')
+    html <- glue::glue('- <i class="fas fa-cloud"></i> [Open in RStudio Cloud]({rstudio_cloud_url})')
     return(knitr::asis_output(html))
   }
 

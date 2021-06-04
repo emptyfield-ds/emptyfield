@@ -9,18 +9,19 @@ Authors@R:
            comment = c(ORCID = "0000-0003-0299-5825"))
 Description: Install learning materials from Empty Field Data Science.
 License: CC BY 4.0
+URL: https://github.com/emptyfield-ds/emptyfield
+BugReports: https://github.com/emptyfield-ds/emptyfield/issues
 Imports: 
     gh,
     glue,
+    knitr,
     pak (>= 0.1.2.9001),
     rlang,
     usethis
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-URL: https://github.com/emptyfield-ds/emptyfield
-BugReports: https://github.com/emptyfield-ds/emptyfield/issues
-Suggests: 
-    testthat (>= 3.0.0)
-Config/testthat/edition: 3
