@@ -16,6 +16,12 @@ browse_cloud <- function(module, open = interactive()) {
   if (is.null(rstudio_cloud_url)) {
     usethis::ui_stop("No RStudio Cloud URL found for {usethis::ui_value(module)}")
   }
+
+  if (isTRUE(getOption("knitr.in.progress"))) {
+    html <- glue::glue('<i class="fas fa-cloud"></i> [Open in RStudio Cloud]({rstudio_cloud_url})')
+    return(knitr::asis_output(html))
+  }
+
   if (open) {
     usethis::ui_done("Opening URL {usethis::ui_value(rstudio_cloud_url)}")
     utils::browseURL(rstudio_cloud_url)
