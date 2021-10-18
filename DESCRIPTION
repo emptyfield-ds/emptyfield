@@ -2,10 +2,7 @@ Package: emptyfield
 Title: Install Empty Field Learning Materials
 Version: 0.0.1
 Authors@R: 
-    person(given = "Malcolm",
-           family = "Barrett",
-           role = c("aut", "cre"),
-           email = "malcolmbarrett@gmail.com",
+    person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0299-5825"))
 Description: Install learning materials from Empty Field Data Science.
 License: CC BY 4.0
@@ -20,6 +17,8 @@ Imports:
     usethis
 Suggests: 
     testthat (>= 3.0.0)
+Remotes: 
+    r-lib/pak
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
