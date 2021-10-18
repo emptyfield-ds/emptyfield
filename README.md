@@ -18,16 +18,19 @@ Cloud.
 You can install the latest version of emptyfield with:
 
 ``` r
-# requires the development version of pak
-install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
-pak::pak("emptyfield-ds/emptyfield")
+options(repos = c(
+  emptyfieldds = "https://emptyfield-ds.r-universe.dev",
+  CRAN = "https://cran.rstudio.com/"
+))
+
+install.packages("emptyfield")
 ```
 
 ## Installing modules
 
 `use_module()` will install the materials for a given module on your
 computer. Then, it will open a new RStudio Project containing the files
-you’ll need.
+you”ll need.
 
 ``` r
 emptyfield::use_module("module_name")
