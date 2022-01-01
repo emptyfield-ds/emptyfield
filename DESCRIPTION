@@ -12,15 +12,12 @@ Imports:
     gh,
     glue,
     knitr,
-    pak (>= 0.1.2.9001),
+    pak (>= 0.2.0),
     rlang,
     usethis
 Suggests: 
     testthat (>= 3.0.0)
-Remotes: 
-    r-lib/pak
 Config/testthat/edition: 3
 Encoding: UTF-8
-LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
